@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.4" />
+    <PackageReference Include="X.PagedList" Version="10.0.3" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="10.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Giaodien\css\bootstrap.css" />
+    <None Include="wwwroot\Giaodien\css\font-awesome.min.css" />
+    <None Include="wwwroot\Giaodien\css\responsive.css" />
+    <None Include="wwwroot\Giaodien\css\style.css" />
+    <None Include="wwwroot\Giaodien\css\style.css.map" />
+    <None Include="wwwroot\Giaodien\css\style.scss" />
+    <None Include="wwwroot\Giaodien\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\Giaodien\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\Giaodien\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\Giaodien\images\about-img.png" />
+    <None Include="wwwroot\Giaodien\images\client1.jpg" />
+    <None Include="wwwroot\Giaodien\images\client2.jpg" />
+    <None Include="wwwroot\Giaodien\images\f1.png" />
+    <None Include="wwwroot\Giaodien\images\f2.png" />
+    <None Include="wwwroot\Giaodien\images\f3.png" />
+    <None Include="wwwroot\Giaodien\images\f4.png" />
+    <None Include="wwwroot\Giaodien\images\f5.png" />
+    <None Include="wwwroot\Giaodien\images\f6.png" />
+    <None Include="wwwroot\Giaodien\images\f7.png" />
+    <None Include="wwwroot\Giaodien\images\f8.png" />
+    <None Include="wwwroot\Giaodien\images\f9.png" />
+    <None Include="wwwroot\Giaodien\images\favicon.png" />
+    <None Include="wwwroot\Giaodien\images\hero-bg.jpg" />
+    <None Include="wwwroot\Giaodien\images\o1.jpg" />
+    <None Include="wwwroot\Giaodien\images\o2.jpg" />
+    <None Include="wwwroot\Giaodien\js\bootstrap.js" />
+    <None Include="wwwroot\Giaodien\js\custom.js" />
+    <None Include="wwwroot\Giaodien\js\jquery-3.4.1.min.js" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "SlideNhaHang";
+    Layout = "~/Views/Shared/_LayoutNhaHang.cshtml";
+}
+<section class="book_section layout_padding" style="background-image: url('../Giaodien/images/hero-bg.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        @await Html.PartialAsync("/Views/MonAn/PartialviewSlide.cshtml")
+    </div>
+</section>
+
+   

@@ -1,0 +1,173 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<qlNhaHang.Data.HoaDon>
+@{
+    ViewData["Title"] = "DonHienThoi";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@{
+    IEnumerable<Ban> tenban = ViewBag.Tenban as IEnumerable<Ban>;
+    IEnumerable<Cthd> tongthanhtoan = ViewBag.Tongtien as IEnumerable<Cthd>;
+
+}
+<div class="row flex-grow">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card card-rounded">
+            <div class="card-body">
+                <div class="d-sm-flex justify-content-between align-items-start">
+
+                        @* <a asp-action="ThemMonAn" class="btn btn-primary btn-lg text-white mb-0 me-0">
+                        <i class="mdi mdi-account-plus"></i> Add new food
+                        </a> *@        
+                        <div class="place-list">
+                        @foreach (var item in Model)
+                        {
+                            <div class="place-item">
+                                <div class="place-divheading">
+                                    <p class="place-heading">Tầng 1</p>
+                                    <i class="fa fa-user icon-user">@item.SoNguoi</i>
+                                </div>
+                                @if (item.IdBan == null)
+                                {
+                                    <div class="place-body">
+                                        <h2 class="place-heading">Chưa chọn bàn</h2>                                   
+                                    </div>
+                                }
+                                else
+                                {
+
+                                    @foreach (var i in tenban)
+                                    {
+                                        if (i.IdBan == item.IdBan)
+                                        {
+                                            <div class="place-body">
+                                                <h2 class="place-heading">@i.TenBan</h2>
+                                            </div>
+                                        }
+
+
+                                    }
+
+                                }
+                                @{
+                                    // Khởi tạo biến để lưu tổng số tiền
+                                    decimal tongtien = 0;
+
+                                    // Tính tổng số tiền cho các bản ghi với IdHoaDon khớp
+                                    foreach (var money in tongthanhtoan)
+                                    {
+                                        if (money.IdHoaDon == item.IdHoaDon) // assuming itemIdHoaDon is available
+                                        {
+                                            tongtien = tongthanhtoan
+                                            .Where(p => p.IdHoaDon == money.IdHoaDon)
+                                            .Sum(p => (decimal?)p.Thanhtien)
+                                            .GetValueOrDefault();
+                                        }
+                                    }
+                                }
+                                <div class="place-body">
+                                    <p class="place-time">00:00:51</p>
+                                    <p class="place-money">
+                                        @(tongtien.ToString("#,##0") + " đồng")
+                                    </p>
+                                </div>
+                                <div class="place-footer">
+                                    <div class="icon-more">
+                                        <i class="fa fa-ellipsis-h"></i>
+                                    </div>
+                                    <div class="pay">
+                                        <p class="place-pay">Thanh toán</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .clear {
+        clear: both;
+    }
+    .place-list{
+
+    }
+
+    .place-list .place-item{
+        float:left;
+        padding:15px 15px;
+        width: 380px;
+    }
+
+    .place-list .place-divheading{
+            background-color:lightgray;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            border-bottom: 1px solid #000;
+    }
+
+    .place-list .place-body{
+            padding: 8px 0;
+            border-bottom: 1px solid lightgray;
+            padding: 5px;
+    }
+
+    .place-list .place-heading{
+            text-align: center;
+            margin: 0;
+    }
+
+    .place-time{
+        margin: 0;
+        display: inline-block;
+        line-height: 24.8px;
+        font-size:16px;
+    }
+
+    .place-money{
+        margin: 0;
+        float: right;
+        line-height: 24.8px;
+        font-size: 16px;
+    }
+    .place-list .place-footer{
+        background: whitesmoke;
+        border-bottom-left-radius: 9px;
+        border-bottom-right-radius: 9px;
+        clear: both;
+    }
+
+    .place-footer .icon-more {
+        display: inline-block;
+        padding: 11px 78px;
+    }
+
+    .place-footer .pay {
+        padding: 0 5px;
+        float: right;
+        color: dodgerblue;
+        padding: 9px 55px;
+        border-left: 1px solid lightgray;
+    }
+
+    .place-footer .pay p{
+      
+        margin: 0;
+    }
+    .place-divheading .place-heading{
+        display: inline-block;
+        line-height: 41px;
+        font-size:16px;
+        margin: 0;
+    }
+
+    .place-divheading i {
+        float: right;
+        line-height: 41px;
+        padding-right: 8px;
+    }
+</style>

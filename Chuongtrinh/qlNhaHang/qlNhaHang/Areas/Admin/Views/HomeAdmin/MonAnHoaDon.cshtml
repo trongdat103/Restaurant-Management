@@ -1,0 +1,245 @@
+﻿@model IEnumerable<qlNhaHang.Areas.ViewModels.ChiTietHoaDonViewModel>
+@{
+    ViewData["Title"] = "MonAnHoaDon";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@{
+    IEnumerable<MonAn> DanhsachMA = ViewBag.Danhsachsp as IEnumerable<MonAn>;
+    var idHoaDonMA = ViewBag.ID_HoaDonMA;
+}
+<style>
+    /* CSS trực tiếp trong tệp HTML */
+    .counter-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f4f4f4;
+        width: 70%;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+    }
+
+    .counter-button {
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .setcounter {
+        margin: 0 10px;
+        font-size: 20px;
+        width: 50px;
+        text-align: center;
+    }
+</style>
+<div class="row flex-grow">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card card-rounded">
+            <div class="card-body">
+                <div class="d-sm-flex justify-content-between align-items-start">
+                    <div>
+                        <h4 class="card-title card-title-dash">Thông Tin Hóa Đơn</h4>
+                        <p class="card-subtitle card-subtitle-dash">Các Món Đã gọi</p>
+                    </div>
+                    
+                </div>
+                <div class="table-responsive  mt-1">
+                    <table class="table select-table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <div class="form-check form-check-flat mt-0">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" aria-checked="false" id="check-all"><i class="input-helper"></i><i class="input-helper"></i>
+                                        </label>
+                                    </div>
+                                </th>
+                                <th>Tên món</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="form-check form-check-flat mt-0">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i><i class="input-helper"></i>
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex ">
+                                            <img src="@Url.Content("~/Images/ImageProduct/"+item.Anhdaidien)" alt="">
+                                            <div>
+                                                <h6>@item.TenMonAn</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>@((@item.DonGia as decimal?).GetValueOrDefault().ToString("#,##") + " đồng")</h6>
+                                        <p>company type</p>
+                                    </td>
+                                    <form asp-action="UpdateSl" asp-controller="HomeAdmin" asp-route-IdMonAnHD="@item.IdMonAn" asp-route-IdHoaDon="@idHoaDonMA">
+                                    <td>
+                                        <div class="counter-container">
+                                            <button type="submit" class="counter-button decrement-button" onclick="decrement('@item.IdMonAn')">-</button>
+                                            <input class="setcounter counter-@item.IdMonAn" type="text" value="@item.SoLuong" name="quantity" readonly>
+                                            <button type="submit" class="counter-button increment-button" onclick="increment('@item.IdMonAn')">+</button>
+                                        </div>
+                                    </td>
+                                    </form>
+                                    <td>
+                                        <a style="color:black" asp-action="XoaMonAnHD" asp-route-IdMonAnHD="@item.IdMonAn" asp-route-IdHoaDon="@idHoaDonMA">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <div>
+                        <h2 style="font-family: 'Arial', sans-serif; font-size: 24px; color: #333; float:right; clear: both;">
+                            Tổng tiền: @Model.Sum(p => p.Thanhtien).GetValueOrDefault().ToString("#,##") đồng
+                        </h2>
+                        <div style="clear: both;">
+                            <a style="float:right; color:white; background-color:dodgerblue; border-top-color:dodgerblue; border-right-color:dodgerblue; border-left-color:dodgerblue; border-bottom-color:dodgerblue; margin-left: 10px;" class="btn btn-danger btn-lg ">
+                                <i class="fa fa-dollar"></i> Thanh Toán
+                            </a>
+
+                            <a asp-action ="LichDatBan" style="float:right; color:white;" class="btn btn-danger btn-lg">
+                                <i class="fa fa-times"></i> Quay lại
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <section class="food_section layout_padding">
+                        <div class="container">
+                            <div class="heading_container heading_center">
+                                <h2>
+                                    Our Menu
+                                </h2>
+                            </div>
+                            @* @await Component.InvokeAsync("MenuLoai") *@
+                            <div class="filters-content">
+                                <div class="row grid">
+                                    @foreach (var item in DanhsachMA)
+                                    {
+
+                                        <div class="col-sm-6 col-lg-4 all pizza">
+                                            <div class="box">
+                                                <div>
+                                                    <div class="img-box">
+                                                        <img src="@Url.Content("~/Images/ImageProduct/"+item.Anhdaidien)" alt="">
+                                                    </div>
+                                                    <div class="detail-box">
+                                                        <h5>
+                                                            @item.TenMon
+                                                        </h5>
+                                                        <p>
+                                                            @item.MoTa
+                                                        </p>
+                                                        <div class="options">
+                                                            <h6>
+                                                                @((item.DonGia as decimal?).GetValueOrDefault().ToString("#,##") + " đồng")
+                                                            </h6>
+                                                            <a asp-action="CapNhatChiTietHD" asp-controller="HomeAdmin" asp-route-idMonAn="@item.IdMonAn" asp-route-IdHoaDon="@idHoaDonMA">
+                                                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
+                                                                <g>
+                                                                <g>
+                                                                <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                              </g>
+                            </g>
+                                                                <g>
+                                                                <g>
+                                                                <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                              </g>
+                            </g>
+                                                                <g>
+                                                                <g>
+                                                                <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                              </g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                                                                <g>
+                            </g>
+                          </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                              
+                            </div>
+                            @* <div class="btn-box">
+                            <a href="">
+                            View More
+                            </a>
+                            </div> *@
+                        </div>
+                    </section>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    /* JavaScript trực tiếp trong tệp HTML */
+    function increment(itemId) {
+        const counter = document.querySelector('.counter-' + itemId);
+        let value = parseInt(counter.value);
+        if (!isNaN(value)) {
+            counter.value = value + 1;
+        }
+    }
+
+    function decrement(itemId) {
+        const counter = document.querySelector('.counter-' + itemId);
+        let value = parseInt(counter.value);
+        if (!isNaN(value) && value > 0) {
+            counter.value = value - 1;
+        }
+    }
+</script>
+

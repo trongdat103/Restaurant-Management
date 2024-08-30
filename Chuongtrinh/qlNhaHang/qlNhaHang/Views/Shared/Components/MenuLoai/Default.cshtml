@@ -1,0 +1,10 @@
+﻿@model IEnumerable<qlNhaHang.ViewModels.MenuLoaiVM>
+<ul class="filters_menu">
+    @foreach (var item in Model)
+    {
+
+        <li data-filter=".burger"><a style="color:black" asp-controller="MonAn" asp-action="MonAnTheoLoai" asp-route-IdLoaiMonAn="@item.IdLoaiMonAn">@item.TenLoai</a></li>
+             
+    }
+    
+</ul>

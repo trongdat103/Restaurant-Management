@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|d:\\qlnhahang\\chuongtrinh\\qlnhahang\\qlnhahang\\data\\khonguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|solutionrelative:qlnhahang\\data\\khonguyenlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|d:\\qlnhahang\\chuongtrinh\\qlnhahang\\qlnhahang\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|solutionrelative:qlnhahang\\areas\\admin\\controllers\\homeadmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|d:\\qlnhahang\\chuongtrinh\\qlnhahang\\qlnhahang\\areas\\admin\\views\\homeadmin\\danhsachbanhdtang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|solutionrelative:qlnhahang\\areas\\admin\\views\\homeadmin\\danhsachbanhdtang.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|d:\\qlnhahang\\chuongtrinh\\qlnhahang\\qlnhahang\\areas\\admin\\views\\homeadmin\\danhsachbanhd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|solutionrelative:qlnhahang\\areas\\admin\\views\\homeadmin\\danhsachbanhd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|d:\\qlnhahang\\chuongtrinh\\qlnhahang\\qlnhahang\\areas\\admin\\views\\shared\\components\\menutanghd\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|solutionrelative:qlnhahang\\areas\\admin\\views\\shared\\components\\menutanghd\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|d:\\qlnhahang\\chuongtrinh\\qlnhahang\\qlnhahang\\areas\\admin\\views\\homeadmin\\chinhsuamonan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{167E0AA7-99A1-4F19-9AA9-C694E736C27F}|qlNhaHang\\qlNhaHang.csproj|solutionrelative:qlnhahang\\areas\\admin\\views\\homeadmin\\chinhsuamonan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 434,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 154,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 44,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "KhoNguyenLieu.cs",
+              "DocumentMoniker": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Data\\KhoNguyenLieu.cs",
+              "RelativeDocumentMoniker": "qlNhaHang\\Data\\KhoNguyenLieu.cs",
+              "ToolTip": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Data\\KhoNguyenLieu.cs",
+              "RelativeToolTip": "qlNhaHang\\Data\\KhoNguyenLieu.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T04:27:13.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DanhSachBanHD.cshtml",
+              "DocumentMoniker": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\DanhSachBanHD.cshtml",
+              "RelativeDocumentMoniker": "qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\DanhSachBanHD.cshtml",
+              "ToolTip": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\DanhSachBanHD.cshtml",
+              "RelativeToolTip": "qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\DanhSachBanHD.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T15:47:01.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChinhSuaMonAn.cshtml",
+              "DocumentMoniker": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\ChinhSuaMonAn.cshtml",
+              "RelativeDocumentMoniker": "qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\ChinhSuaMonAn.cshtml",
+              "ToolTip": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\ChinhSuaMonAn.cshtml",
+              "RelativeToolTip": "qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\ChinhSuaMonAn.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-26T15:22:59.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DanhSachBanHDTang.cshtml",
+              "DocumentMoniker": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\DanhSachBanHDTang.cshtml",
+              "RelativeDocumentMoniker": "qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\DanhSachBanHDTang.cshtml",
+              "ToolTip": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\DanhSachBanHDTang.cshtml",
+              "RelativeToolTip": "qlNhaHang\\Areas\\Admin\\Views\\HomeAdmin\\DanhSachBanHDTang.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAQwBwAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T16:09:52.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Views\\Shared\\Components\\MenuTangHD\\Default.cshtml",
+              "RelativeDocumentMoniker": "qlNhaHang\\Areas\\Admin\\Views\\Shared\\Components\\MenuTangHD\\Default.cshtml",
+              "ToolTip": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Views\\Shared\\Components\\MenuTangHD\\Default.cshtml",
+              "RelativeToolTip": "qlNhaHang\\Areas\\Admin\\Views\\Shared\\Components\\MenuTangHD\\Default.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-22T15:13:43.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeAdminController.cs",
+              "DocumentMoniker": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeDocumentMoniker": "qlNhaHang\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ToolTip": "D:\\QlNhaHang\\Chuongtrinh\\qlNhaHang\\qlNhaHang\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "RelativeToolTip": "qlNhaHang\\Areas\\Admin\\Controllers\\HomeAdminController.cs",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAqwLYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-21T04:55:29.351Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

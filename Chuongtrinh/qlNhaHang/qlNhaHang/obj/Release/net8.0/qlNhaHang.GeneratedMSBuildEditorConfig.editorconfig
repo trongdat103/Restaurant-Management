@@ -1,0 +1,123 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = qlNhaHang
+build_property.RootNamespace = qlNhaHang
+build_property.ProjectDir = D:\QlNhaHang\Chuongtrinh\QLnhahang\qlNhaHang\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\QlNhaHang\Chuongtrinh\QLnhahang\qlNhaHang
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Areas/Admin/Views/HomeAdmin/DanhMucMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXERhbmhNdWNNb25Bbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Areas/Admin/Views/HomeAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZUFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Cart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Cart/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Home/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/MonAn/BookTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uQW5cQm9va1RhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/MonAn/HomeNhaHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uQW5cSG9tZU5oYUhhbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/MonAn/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uQW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/MonAn/MonAnTheoLoai.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uQW5cTW9uQW5UaGVvTG9haS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/MonAn/PartialMonAn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uQW5cUGFydGlhbE1vbkFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/MonAn/PartialviewSlide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9uQW5cUGFydGlhbHZpZXdTbGlkZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Shared/Components/Cart/CartPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxDYXJ0UGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Shared/Components/MenuLoai/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudUxvYWlcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Shared/_LayoutNhaHang.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROaGFIYW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Shared/_LayoutNhaHang1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXROaGFIYW5nMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/QlNhaHang/Chuongtrinh/qlNhaHang/qlNhaHang/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dduvvluca8

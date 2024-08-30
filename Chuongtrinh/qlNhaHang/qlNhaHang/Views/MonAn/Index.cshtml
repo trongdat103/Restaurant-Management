@@ -1,0 +1,43 @@
+﻿@using X.PagedList.Mvc.Core;
+@model X.PagedList.IPagedList<MonAn>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutNhaHang.cshtml";
+}
+
+
+
+    <!-- food section -->
+
+    <section class="food_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <h2>
+                    Our Menu
+                </h2>
+            </div>
+            @await Component.InvokeAsync("MenuLoai")
+            <div class="filters-content">
+                <div class="row grid">
+                    @foreach (var item in Model)
+                    {
+                        
+                        @await Html.PartialAsync("PartialMonAn", item)
+                    }
+                </div>
+                <div>
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+                </div>
+            </div>
+            @* <div class="btn-box">
+                <a href="">
+                    View More
+                </a>
+            </div> *@
+        </div>
+    </section>
+
+    <!-- end food section -->
+    <!-- footer section -->
+   
+
